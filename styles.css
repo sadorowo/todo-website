@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --background-color: #2f3136;
+    --base-font: 'Poppins', sans-serif;
+    --border-radius: 10px;
+}
+
+* {
+    font-family: var(--base-font);
+}
+
+body {
+    background-color: var(--background-color);
+    text-align: center;
+    color: #fff;
+}
+
+button, input, select {
+    background-color: lightblue;
+    border-radius: var(--border-radius);
+    border: none;
+    color: #000;
+    padding: 1.5em;
+    margin: 0.5em;
+    overflow: hidden;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul#todo-list li {
+    cursor: pointer;
+    transition: ease-in .1s;
+}
+
+ul#todo-list li:hover {
+    color: red;
+}
